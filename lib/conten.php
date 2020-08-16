@@ -1,0 +1,20 @@
+<?php
+	if(isset($_GET['page'])){
+		switch($_GET['page']){
+			case"tambah_akun":
+				include("lib/view/tambah_akun.php");
+			break;
+			case"input_transaksi":
+				include("lib/view/input_transaksi.php");
+			break;
+			case"buku_besar":
+				include("lib/view/buku_besar.php");
+			break;
+			case"neraca_saldo":
+				include("lib/view/neraca_saldo.php");
+			break;
+		}
+	}else{
+		include("lib/view/home.php");;
+	}
+?>
